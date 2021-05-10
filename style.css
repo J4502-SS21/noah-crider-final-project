@@ -177,3 +177,40 @@ h3 {
   padding: 32px;
   font-size: 24px;
 }
+
+#menu_trigger {
+  display: none;
+}
+
+button {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  li {
+    width: 100%;
+  }
+  ul {
+    display: inline-flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #menu_trigger {
+    display: block;
+    position: absolute;
+    top: 150px;
+    align: center;
+    color: #480CA8;
+  }
+  #menu_nav {
+    display: none;
+  }
+  button {
+    color: black;
+    background color: black;
+    border: 2px solid black;
+  }
+}
